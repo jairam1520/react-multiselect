@@ -1,0 +1,73 @@
+button {
+  width: 350px;
+  height: 25px;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.multiselect-grid {
+  padding: 10px 20px;
+  height: 400px;
+  background-color: white;
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  row-gap: 3px;
+  overflow-y: auto;
+}
+.grid-item {
+  padding-top: 5px;
+  text-align: center;
+  display: flex;
+  color: black;
+  height: 35px;
+}
+
+.option-label {
+  font-size: 13px;
+}
+
+.option-checkbox {
+  width: 15px; /* Set desired width */
+  height: 15px;
+}
+.isSelected {
+  background-color: #e5f4fa;
+  color: #000;
+}
+.isNotSelected {
+  background-color: white;
+  color: #000;
+}
+.line {
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: #fafafa;
+}
+
+.select-all {
+  color: #cbcbcb;
+  display: grid-row;
+  background-color: white;
+  padding: 0 20px;
+}
+
+.arrow {
+  margin-left: 180px;
+  border: solid  #cbcbcb;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
